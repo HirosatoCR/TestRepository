@@ -1,0 +1,393 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中間ディレクトリ (Debug\) に別のプロジェクト (DxlibStudyProjects03.vcxproj, DxlibStudyProjects02.vcxproj, DxxlibStudyProjects02.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  PlayerController.cpp
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winbase.h(7356): warning C5039: 'TpSetCallbackCleanupGroup': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7542): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7548): warning C4668: '_WIN32_WINNT_WIN10_RS1' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7553): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7557): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7564): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7574): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7578): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7583): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7777): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12232): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12249): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12266): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12285): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12404): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(80): warning C5039: 'DSA_DestroyCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(89): warning C5039: 'DSA_EnumCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(106): warning C5039: 'DSA_Sort': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(132): warning C5039: 'DPA_DestroyCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(141): warning C5039: 'DPA_EnumCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(165): warning C5039: 'DPA_Sort': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(238): warning C5039: 'DPA_Merge': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(264): warning C5039: 'DPA_Search': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1130): warning C4820: 'DxLib::tagDRAWCHARINFO': '2' バイトのパディングを データ メンバー 'DxLib::tagDRAWCHARINFO::Bytes' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1169): warning C4820: 'DxLib::tagFILEINFOW': '4' バイトのパディングを データ メンバー 'DxLib::tagFILEINFOW::DirFlag' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1337): warning C4820: 'DxLib::tagHITRESULT_LINE_D': '4' バイトのパディングを データ メンバー 'DxLib::tagHITRESULT_LINE_D::HitFlag' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1442): warning C4820: 'DxLib::tagPLANE_POINT_RESULT_D': '4' バイトのパディングを データ メンバー 'DxLib::tagPLANE_POINT_RESULT_D::Pnt_Plane_Normal_Side' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1753): warning C4820: 'DxLib::tagTOUCHINPUTDATA': '4' バイトのパディングを データ メンバー 'DxLib::tagTOUCHINPUTDATA::Point' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(25): warning C4820: '__std_exception_data': '3' バイトのパディングを データ メンバー '__std_exception_data::_DoFree' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(122): warning C4365: '引数': 'long' から 'unsigned int' に変換しました。signed/unsigned が一致しません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(132): warning C4365: '引数': 'long' から 'unsigned int' に変換しました。signed/unsigned が一致しません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(2360): warning C4625: 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(82): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\drawmapmanager.h(122): note: コンパイル対象の クラス テンプレート インスタンス化 'std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.h(20): warning C4820: 'controller::PlayerController': '3' バイトのパディングを データ メンバー 'controller::PlayerController::IsSelectingPiece' の後に追加しました。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.h(20): warning C4265: 'controller::PlayerController': クラスは仮想関数を含んでいますが、デストラクターはこのクラスの仮想
+           インスタンスではなく、正しく消滅されない可能性があります。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(14): warning C4100: 'length': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(14): warning C4100: 'firstMemValue': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(14): warning C4100: 'piecePositionY': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(14): warning C4100: 'piecePositionX': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(23): warning C4100: 'maxValue': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(23): warning C4100: 'minValue': 引数は関数の本体部で 1 度も参照されません。
+c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(23): warning C4100: 'currentValue': 引数は関数の本体部で 1 度も参照されません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility(321): warning C4820: 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>': '3' バイトのパディングを データ メンバー 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::second' の後に追加しました。
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(363): note: コンパイル対象の クラス テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(362): note: クラス テンプレート のメンバー関数 'PieceInformation &std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のコンパイル中
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(41): note: コンパイル対象の関数 テンプレート インスタンス化 'PieceInformation &std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\drawmapmanager.h(122): note: コンパイル対象の クラス テンプレート インスタンス化 'std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(401): warning C4820: 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>': '2' バイトのパディングを データ メンバー 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>::_Isnil' の後に追加しました。
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(947): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(946): note: クラス テンプレート のメンバー関数 'void std::_Tree_comp_alloc<_Traits>::_Freeheadnode(std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *)' のコンパイル中
+          with
+          [
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>,
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(839): note: コンパイル対象の関数 テンプレート インスタンス化 'void std::_Tree_comp_alloc<_Traits>::_Freeheadnode(std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *)' のリファレンスを確認してください
+          with
+          [
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>,
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1032): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree_comp_alloc<_Traits>' のリファレンスを確認してください
+          with
+          [
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(82): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(831): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(826): note: クラス テンプレート のメンバー関数 'void std::_Tree_comp_alloc<_Traits>::_Construct(void)' のコンパイル中
+          with
+          [
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(792): note: コンパイル対象の関数 テンプレート インスタンス化 'void std::_Tree_comp_alloc<_Traits>::_Construct(void)' のリファレンスを確認してください
+          with
+          [
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(935): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(927): note: クラス テンプレート のメンバー関数 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buyheadnode(void)' のコンパイル中
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(828): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buyheadnode(void)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(709): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(729): note: コンパイル対象の関数 テンプレート インスタンス化 'void std::vector<RectTransform,std::allocator<_Ty>>::_Range_construct_or_tidy<const _Elem*>(_Iter,_Iter,std::forward_iterator_tag)' のリファレンスを確認してください
+          with
+          [
+              _Ty=RectTransform,
+              _Elem=RectTransform,
+              _Iter=const RectTransform *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(729): note: コンパイル対象の関数 テンプレート インスタンス化 'void std::vector<RectTransform,std::allocator<_Ty>>::_Range_construct_or_tidy<const _Elem*>(_Iter,_Iter,std::forward_iterator_tag)' のリファレンスを確認してください
+          with
+          [
+              _Ty=RectTransform,
+              _Elem=RectTransform,
+              _Iter=const RectTransform *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(726): note: クラス テンプレート のメンバー関数 'std::vector<RectTransform,std::allocator<_Ty>>::vector(std::initializer_list<_Ty>,const _Alloc &)' のコンパイル中
+          with
+          [
+              _Ty=RectTransform,
+              _Alloc=std::allocator<RectTransform>
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\drawmapmanager.h(94): note: コンパイル対象の関数 テンプレート インスタンス化 'std::vector<RectTransform,std::allocator<_Ty>>::vector(std::initializer_list<_Ty>,const _Alloc &)' のリファレンスを確認してください
+          with
+          [
+              _Ty=RectTransform,
+              _Alloc=std::allocator<RectTransform>
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\drawmapmanager.h(94): note: コンパイル対象の クラス テンプレート インスタンス化 'std::vector<RectTransform,std::allocator<_Ty>>' のリファレンスを確認してください
+          with
+          [
+              _Ty=RectTransform
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(271): warning C4626: 'std::_Tuple_val<_This>': 代入演算子は暗黙的に削除済みとして定義されました
+          with
+          [
+              _This=const PieceType &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(845): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tuple_val<_This>' のリファレンスを確認してください
+          with
+          [
+              _This=const PieceType &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(227): note: コンパイル対象の クラス テンプレート インスタンス化 'std::tuple<const PieceType &>' のリファレンスを確認してください
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(247): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<const PieceType&,>(_Keyty)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Keyty=const PieceType &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(248): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<const PieceType&,>(_Keyty)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Keyty=const PieceType &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(363): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::try_emplace<>(const PieceType &)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(363): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::try_emplace<>(const PieceType &)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(362): note: クラス テンプレート のメンバー関数 'PieceInformation &std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のコンパイル中
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+  c:\users\naoto.hirosato\documents\visualstudioprojects\dxxlibstudyprojects07\playercontroller.cpp(41): note: コンパイル対象の関数 テンプレート インスタンス化 'PieceInformation &std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=PieceInformation
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(271): warning C5027: 'std::_Tuple_val<_This>': 移動代入演算子が暗黙的に削除済みとして定義されました
+          with
+          [
+              _This=const PieceType &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(985): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1161): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode<const std::piecewise_construct_t&,std::tuple<const PieceType &>,std::tuple<>>(const std::piecewise_construct_t &,std::tuple<const PieceType &> &&,std::tuple<> &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1162): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode<const std::piecewise_construct_t&,std::tuple<const PieceType &>,std::tuple<>>(const std::piecewise_construct_t &,std::tuple<const PieceType &> &&,std::tuple<> &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(227): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::emplace_hint<const std::piecewise_construct_t&,std::tuple<const PieceType &>,std::tuple<>>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,const std::piecewise_construct_t &,std::tuple<const PieceType &> &&,std::tuple<> &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(232): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::emplace_hint<const std::piecewise_construct_t&,std::tuple<const PieceType &>,std::tuple<>>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,const std::piecewise_construct_t &,std::tuple<const PieceType &> &&,std::tuple<> &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(247): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<const PieceType&,>(_Keyty)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Keyty=const PieceType &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(248): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::_Try_emplace<const PieceType&,>(_Keyty)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Keyty=const PieceType &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1720): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1161): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Valty=std::pair<const PieceType,PieceInformation> &,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Valty=std::pair<const PieceType,PieceInformation> &,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(961): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(951): note: クラス テンプレート のメンバー関数 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode0(void)' のコンパイル中
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(977): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer> *std::_Tree_comp_alloc<_Traits>::_Buynode0(void)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Traits=std::_Tmap_traits<PieceType,PieceInformation,std::less<PieceType>,std::allocator<std::pair<const PieceType,PieceInformation>>,false>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1796): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1726): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *,
+              _Valty=std::pair<const PieceType,PieceInformation> &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1725): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *,
+              _Valty=std::pair<const PieceType,PieceInformation> &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1161): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Valty=std::pair<const PieceType,PieceInformation> &,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: コンパイル対象の関数 テンプレート インスタンス化 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tmap_traits<_Kty,PieceInformation,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)' のリファレンスを確認してください
+          with
+          [
+              _Ty=std::pair<const PieceType,PieceInformation>,
+              _Kty=PieceType,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,PieceInformation>>,
+              _Value_type=std::pair<const PieceType,PieceInformation>,
+              _Valty=std::pair<const PieceType,PieceInformation> &,
+              _Nodety=std::_Tree_node<std::pair<const PieceType,PieceInformation>,std::_Default_allocator_traits<std::allocator<std::pair<const PieceType,PieceInformation>>>::void_pointer> *
+          ]
+DrawMapManager.obj : error LNK2005: "struct GraphsAdressLists GraphsList" (?GraphsList@@3UGraphsAdressLists@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "struct PieceInformation CurrentSelectPieceInformation" (?CurrentSelectPieceInformation@@3UPieceInformation@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "int (* map::DefaultMap)[8]" (?DefaultMap@map@@3PAY07HA) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "struct FieldRectStruct CurrentSelectFieldRect" (?CurrentSelectFieldRect@@3UFieldRectStruct@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::PawnMap" (?PawnMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::KingMap" (?KingMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::QueenMap" (?QueenMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::RookMap" (?RookMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::BishopMap" (?BishopMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+DrawMapManager.obj : error LNK2005: "class std::map<enum PieceType,struct PieceInformation,struct std::less<enum PieceType>,class std::allocator<struct std::pair<enum PieceType const ,struct PieceInformation> > > map::PieceMap" (?PieceMap@map@@3V?$map@W4PieceType@@UPieceInformation@@U?$less@W4PieceType@@@std@@V?$allocator@U?$pair@$$CBW4PieceType@@UPieceInformation@@@std@@@4@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "struct GraphsAdressLists GraphsList" (?GraphsList@@3UGraphsAdressLists@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "struct PieceInformation CurrentSelectPieceInformation" (?CurrentSelectPieceInformation@@3UPieceInformation@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "int (* map::DefaultMap)[8]" (?DefaultMap@map@@3PAY07HA) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "struct FieldRectStruct CurrentSelectFieldRect" (?CurrentSelectFieldRect@@3UFieldRectStruct@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::PawnMap" (?PawnMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::KingMap" (?KingMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::QueenMap" (?QueenMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::RookMap" (?RookMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::vector<struct RectTransform,class std::allocator<struct RectTransform> > map::BishopMap" (?BishopMap@map@@3V?$vector@URectTransform@@V?$allocator@URectTransform@@@std@@@std@@A) は既に BaseController.obj で定義されています。
+PlayerController.obj : error LNK2005: "class std::map<enum PieceType,struct PieceInformation,struct std::less<enum PieceType>,class std::allocator<struct std::pair<enum PieceType const ,struct PieceInformation> > > map::PieceMap" (?PieceMap@map@@3V?$map@W4PieceType@@UPieceInformation@@U?$less@W4PieceType@@@std@@V?$allocator@U?$pair@$$CBW4PieceType@@UPieceInformation@@@std@@@4@@std@@A) は既に BaseController.obj で定義されています。
+C:\Users\naoto.hirosato\Documents\VisualStudioProjects\DxxlibStudyProjects07\Debug\DxlibStudyProjects04.exe : fatal error LNK1169: 1 つ以上の複数回定義されているシンボルが見つかりました。
