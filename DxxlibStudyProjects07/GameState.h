@@ -2,8 +2,7 @@
 enum GameState
 {
 	Title,
-	PlayerTurn,
-	EnemyTurn,
+	InGame,
 	Confirmation,
 	Win,
 	Lose,

@@ -20,35 +20,68 @@ void map::BoxInformationManager::PieceMove(int currentPiecePositionX, int curren
 	}
 	BoxInformation[targetPiecePositionY][targetPiecePositionX] = { targetPiecePositionY,targetPiecePositionX, currentPiece.ThisPieceType, currentPiece.ThisPlayerType };
 	BoxInformation[currentPiecePositionY][currentPiecePositionX] = { currentPiecePositionY, currentPiecePositionX,PieceType::None , PlayerType::NonPlayer };
+
+	map::DrawMapManager drawMap;
+	//drawMap.DrawMap(this);
 }
 
 //BoxinformationからGetする関数
-FieldRectStruct map::BoxInformationManager::GetBoxInformation(int arg_row, int arg_col)
+map::FieldRectStruct map::BoxInformationManager::GetBoxInformation(int arg_row, int arg_col)
 {
 	//例外処理入れろ
 	return BoxInformation[arg_row][arg_col];
 }
 
-PieceInformation map::BoxInformationManager::GetPieceMap(PieceType arg_pieceType)
+map::PieceInformation map::BoxInformationManager::GetPieceMap(PieceType arg_pieceType)
 {
 	return PieceMap[arg_pieceType];
 }
 
+void map::BoxInformationManager::DebugBoxInformation(int X)
+{
+	for (int _row = 0; _row < RectVerticalNumber; _row++)
+	{
+		for (int _col = 0; _col < RectHorizontalNumber; _col++)
+		{
+			DxLib::DrawFormatString(X + _col * 20, 900 + _row * 50, GetColor(255, 255, 255), "%3d", BoxInformation[_row][_col].ThisPieceType);
+			//BoxInformation[_row][_col] = { _row, _col,PieceType::None , PlayerType::NonPlayer };
+		}
+	}
+}
+
+int map::BoxInformationManager::GetRemainingPiece(PlayerType arg_playerType)
+{
+	int _returnValue = 0;
+	FieldRectStruct _currentSelectRect;
+	for (int _row = 0; _row < RectVerticalNumber; _row++)
+	{
+		for (int _col = 0; _col < RectHorizontalNumber; _col++)
+		{
+			_currentSelectRect = BoxInformation[_row][_col];
+			if (_currentSelectRect.ThisPlayerType == arg_playerType)
+			{
+				_returnValue++;
+			}
+		}
+	}
+	return _returnValue;
+}
+
 void map::BoxInformationManager::InitializeMoveMap()
 {
-	PieceInformation _insertThis = { ARRAY_FIRSTMAPVALUE(PawnMap), ARRAY_LENGTH(PawnMap) };
+	PieceInformation _insertThis = { &PawnMap[0], 1 };
 	PieceMap.insert(std::make_pair(PieceType::Pawn, _insertThis));
 
-	_insertThis = { ARRAY_FIRSTMAPVALUE(KingMap), ARRAY_LENGTH(KingMap) };
+	_insertThis = { &KingMap[0], 8 };
 	PieceMap.insert(std::make_pair(PieceType::King, _insertThis));
 
-	_insertThis = { ARRAY_FIRSTMAPVALUE(QueenMap), ARRAY_LENGTH(QueenMap) };
+	_insertThis = { ARRAY_FIRSTMAPVALUE(QueenMap), 8 };
 	PieceMap.insert(std::make_pair(PieceType::Queen, _insertThis));
 
-	_insertThis = { ARRAY_FIRSTMAPVALUE(RookMap), ARRAY_LENGTH(RookMap) };
+	_insertThis = { ARRAY_FIRSTMAPVALUE(RookMap), 4 };
 	PieceMap.insert(std::make_pair(PieceType::Rook, _insertThis));
 
-	_insertThis = { ARRAY_FIRSTMAPVALUE(BishopMap), ARRAY_LENGTH(BishopMap) };
+	_insertThis = { ARRAY_FIRSTMAPVALUE(BishopMap), 4 };
 	PieceMap.insert(std::make_pair(PieceType::Bishop, _insertThis));
 }
 
@@ -94,7 +127,6 @@ void map::BoxInformationManager::PlacementOfPieces()
 	BoxInformation[_enemyPosY][ENEMY_LINE] = { _enemyPosY,ENEMY_LINE,PieceType::Bishop, PlayerType::Enemy };
 }
 
-
 map::DrawMapManager::DrawMapManager()
 {
 	//フルスクリーンではなくウィンドウモードに変更
@@ -104,19 +136,10 @@ map::DrawMapManager::DrawMapManager()
 
 }
 
-
-void map::DrawMapManager::Draw()
-{
-	ClearDrawScreen();
-	//ダブルバッファリング
-	SetDrawScreen(DX_SCREEN_BACK);
-
-	
-}
-
 //駒の画像とフィールドを描写する関数、描写に関する処理はここ以外ではやってない。
-void map::DrawMapManager::DrawMap()
+void map::DrawMapManager::DrawMap(map::BoxInformationManager * box)
 {
+	BoxManager = box;
 	int _leftUpperX = 0;
 	int _leftUpperY = 0;//この2つの値はマスの左上の座標を示す、この座標を元に画像は右下に描画される
 
@@ -132,9 +155,9 @@ void map::DrawMapManager::DrawMap()
 		{
 			_leftUpperX = _col * BoxSize;
 			_leftUpperY = _row * BoxSize;	
-			_currentConfirmBox = BoxManager.GetBoxInformation(_row, _col);
+			_currentConfirmBox = BoxManager->GetBoxInformation(_row, _col);
+			//_graphicHandle = GetGraphicHandle(_currentConfirmBox.ThisPieceType, _currentConfirmBox.ThisPlayerType);
 			_graphicHandle = GetGraphicHandle(_currentConfirmBox.ThisPieceType, _currentConfirmBox.ThisPlayerType);
-
 			DrawGraph(_leftUpperX, _leftUpperY, _graphicHandle, FALSE);
 
 			_rightDownerX = _leftUpperX + BoxSize;
@@ -151,7 +174,6 @@ void map::DrawMapManager::DrawMap()
 	}
 }
 
-
 void map::DrawMapManager::ResetDefaultMap()
 {
 	//行×数の分だけfor文を回す
@@ -162,7 +184,7 @@ void map::DrawMapManager::ResetDefaultMap()
 			DefaultMap[_row][_col] = 0;
 		}
 	}
-	DrawMap();
+	//DrawMap(BoxManager);
 }
 
 int map::DrawMapManager::GetGraphicHandle(PieceType arg_pieceType, PlayerType arg_playerType)

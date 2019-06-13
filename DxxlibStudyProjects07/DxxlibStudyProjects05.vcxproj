@@ -159,14 +159,12 @@
     <ClCompile Include="BaseController.cpp" />
     <ClCompile Include="DrawMapManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PlayerController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseController.h" />
     <ClInclude Include="DrawMapManager.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="pieceType.h" />
-    <ClInclude Include="PlayerController.h" />
     <ClInclude Include="playerType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
