@@ -1,0 +1,128 @@
+﻿  PlayerController.cpp
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winbase.h(7356): warning C5039: 'TpSetCallbackCleanupGroup': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7542): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7548): warning C4668: '_WIN32_WINNT_WIN10_RS1' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7553): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7557): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7564): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7574): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7578): warning C4668: '_WIN32_WINNT_WIN10_TH2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7583): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(7777): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12232): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12249): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12266): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12285): warning C4668: '_WIN32_WINNT_WIN10_RS2' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\winioctl.h(12404): warning C4668: '_WIN32_WINNT_WIN10_RS3' は、'#if/#elif' を '0' に置換するプリプロセッサ マクロとして定義されていません。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(80): warning C5039: 'DSA_DestroyCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(89): warning C5039: 'DSA_EnumCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(106): warning C5039: 'DSA_Sort': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(132): warning C5039: 'DPA_DestroyCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(141): warning C5039: 'DPA_EnumCallback': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(165): warning C5039: 'DPA_Sort': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(238): warning C5039: 'DPA_Merge': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\dpa_dsa.h(264): warning C5039: 'DPA_Search': -EHc の extern C 関数に渡された、スローする可能性がある関数へのポインターまたは参照。この関数が例外をスローすると、未定義の動作が発生する可能性があります。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1130): warning C4820: 'DxLib::tagDRAWCHARINFO': '2' バイトのパディングを データ メンバー 'DxLib::tagDRAWCHARINFO::Bytes' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1169): warning C4820: 'DxLib::tagFILEINFOW': '4' バイトのパディングを データ メンバー 'DxLib::tagFILEINFOW::DirFlag' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1337): warning C4820: 'DxLib::tagHITRESULT_LINE_D': '4' バイトのパディングを データ メンバー 'DxLib::tagHITRESULT_LINE_D::HitFlag' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1442): warning C4820: 'DxLib::tagPLANE_POINT_RESULT_D': '4' バイトのパディングを データ メンバー 'DxLib::tagPLANE_POINT_RESULT_D::Pnt_Plane_Normal_Side' の後に追加しました。
+c:\users\naoto.hirosato\documents\dxlib_vc\プロジェクトに追加すべきファイル_vc用\dxlib.h(1753): warning C4820: 'DxLib::tagTOUCHINPUTDATA': '4' バイトのパディングを データ メンバー 'DxLib::tagTOUCHINPUTDATA::Point' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(25): warning C4820: '__std_exception_data': '3' バイトのパディングを データ メンバー '__std_exception_data::_DoFree' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(122): warning C4365: '引数': 'long' から 'unsigned int' に変換しました。signed/unsigned が一致しません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(132): warning C4365: '引数': 'long' から 'unsigned int' に変換しました。signed/unsigned が一致しません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(2360): warning C4625: 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+          with
+          [
+              _Kty=PieceType,
+              _Ty=map::PieceInformation,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,map::PieceInformation>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(82): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=map::PieceInformation,
+              _Pr=std::less<PieceType>,
+              _Alloc=std::allocator<std::pair<const PieceType,map::PieceInformation>>
+          ]
+  c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\boxinformationmanager.h(124): note: コンパイル対象の クラス テンプレート インスタンス化 'std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=PieceType,
+              _Ty=map::PieceInformation
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xtree(2360): warning C4625: 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+          with
+          [
+              _Kty=std::pair<PieceType,PlayerType>,
+              _Ty=int,
+              _Pr=std::less<std::pair<PieceType,PlayerType>>,
+              _Alloc=std::allocator<std::pair<const std::pair<PieceType,PlayerType>,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\map(82): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=std::pair<PieceType,PlayerType>,
+              _Ty=int,
+              _Pr=std::less<std::pair<PieceType,PlayerType>>,
+              _Alloc=std::allocator<std::pair<const std::pair<PieceType,PlayerType>,int>>
+          ]
+  c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\drawmapmanager.h(37): note: コンパイル対象の クラス テンプレート インスタンス化 'std::map<std::pair<PieceType,PlayerType>,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' のリファレンスを確認してください
+          with
+          [
+              _Kty=std::pair<PieceType,PlayerType>,
+              _Ty=int
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_typeinfo.h(44): warning C4820: '__std_type_info_data': '3' バイトのパディングを データ メンバー '__std_type_info_data::_DecoratedName' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(4183): warning C4820: 'std::_Yarn<char>': '3' バイトのパディングを データ メンバー 'std::_Yarn<char>::_Nul' の後に追加しました。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocinfo(228): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Yarn<char>' のリファレンスを確認してください
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility(4183): warning C4820: 'std::_Yarn<wchar_t>': '2' バイトのパディングを データ メンバー 'std::_Yarn<wchar_t>::_Nul' の後に追加しました。
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocinfo(230): note: コンパイル対象の クラス テンプレート インスタンス化 'std::_Yarn<wchar_t>' のリファレンスを確認してください
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(247): warning C4820: 'std::locale::_Locimp': '3' バイトのパディングを データ メンバー 'std::locale::_Locimp::_Xparent' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(488): warning C4820: 'std::locale': '3' バイトのパディングを 基底クラス 'std::_Crt_new_delete' の後に追加しました。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(330): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(356): warning C4571: 情報: catch(...) の意味が Visual C++ 7.1 から変更されています。構造化例外 (SEH) はキャッチされません。
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(812): warning C4625: 'std::codecvt_base': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(812): warning C4626: 'std::codecvt_base': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1353): warning C4625: 'std::codecvt<char16_t,char,_Mbstatet>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1353): warning C4626: 'std::codecvt<char16_t,char,_Mbstatet>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1678): warning C4625: 'std::codecvt<char32_t,char,_Mbstatet>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1678): warning C4626: 'std::codecvt<char32_t,char,_Mbstatet>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1922): warning C4625: 'std::codecvt<wchar_t,char,_Mbstatet>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(1922): warning C4626: 'std::codecvt<wchar_t,char,_Mbstatet>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2171): warning C4625: 'std::codecvt<unsigned short,char,_Mbstatet>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2171): warning C4626: 'std::codecvt<unsigned short,char,_Mbstatet>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2219): warning C4625: 'std::ctype_base': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2219): warning C4626: 'std::ctype_base': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2721): warning C4625: 'std::ctype<char>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2721): warning C4626: 'std::ctype<char>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2962): warning C4625: 'std::ctype<wchar_t>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(2962): warning C4626: 'std::ctype<wchar_t>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(3205): warning C4625: 'std::ctype<unsigned short>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(3205): warning C4626: 'std::ctype<unsigned short>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(3250): warning C4625: 'std::ctype_byname<char>': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xlocale(3250): warning C4626: 'std::ctype_byname<char>': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(498): warning C4625: 'std::_Generic_error_category': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(498): warning C5026: 'std::_Generic_error_category': 移動コンストラクターが暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(498): warning C4626: 'std::_Generic_error_category': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(498): warning C5027: 'std::_Generic_error_category': 移動代入演算子が暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(526): warning C4625: 'std::_Iostream_error_category': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(526): warning C5026: 'std::_Iostream_error_category': 移動コンストラクターが暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(526): warning C4626: 'std::_Iostream_error_category': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(526): warning C5027: 'std::_Iostream_error_category': 移動代入演算子が暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(574): warning C4625: 'std::_System_error_category': コピー コンストラクターは暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(574): warning C5026: 'std::_System_error_category': 移動コンストラクターが暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(574): warning C4626: 'std::_System_error_category': 代入演算子は暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(574): warning C5027: 'std::_System_error_category': 移動代入演算子が暗黙的に削除済みとして定義されました
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase(657): warning C4820: 'std::ios_base': '4' バイトのパディングを データ メンバー 'std::ios_base::_Ploc' の後に追加しました。
+c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\basecontroller.h(31): warning C4820: 'controller::BaseController': '3' バイトのパディングを データ メンバー 'controller::BaseController::TurnChange' の後に追加しました。
+c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\basecontroller.h(31): warning C4265: 'controller::BaseController': クラスは仮想関数を含んでいますが、デストラクターはこのクラスの仮想
+           インスタンスではなく、正しく消滅されない可能性があります。
+c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\playercontroller.h(34): warning C4820: 'controller::PlayerController': '2' バイトのパディングを データ メンバー 'controller::PlayerController::InputBool' の後に追加しました。
+c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\playercontroller.h(34): warning C4265: 'controller::PlayerController': クラスは仮想関数を含んでいますが、デストラクターはこのクラスの仮想
+           インスタンスではなく、正しく消滅されない可能性があります。
+c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\playercontroller.cpp(18): warning C5045: /Qspectre スイッチが
+  c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\playercontroller.cpp(15) : 注: この行で比較を行ってインデックス '_arrayNumber' の範囲を確認します
+  c:\users\naoto.hirosato\desktop\dxxlibstudyprojects09\playercontroller.cpp(49) : 注: この行に呼び出しを入力します に指定されている場合、コンパイラはメモリの読み込みに Spectre の軽減策を挿入します
+  DxxlibStudyProjects05.vcxproj -> C:\Users\naoto.hirosato\Desktop\DxxlibStudyProjects09\Debug\DxlibStudyProjects04.exe
