@@ -1,19 +1,6 @@
 #include "BaseController.h"
 
-
-
-
-controller::BaseController::BaseController()
-{
-}
-
-controller::BaseController::~BaseController()
-{
-	//delete &BoxManager;
-}
-
-
-
+//移動できるマス目を塗りつぶす処理、現在の地点から移動情報の値を加算した地点までをそれぞれの座標を1つずつ加算して、移動可能かどうか確かめていく処理を行っていく
 void controller::PlayerController::PieceMoveMapDraw(int piecePositionX, int piecePositionY, map::RectTransform * firstMemValue, int length)
 {
 	int _addNum = 0;	//移動出来る箇所の数、0の時にはキャラ選択状態を解除する
@@ -55,10 +42,10 @@ void controller::PlayerController::PieceMoveMapDraw(int piecePositionX, int piec
 			_upperY = piecePositionY + _addY * _moveDis;
 			_upperX = piecePositionX + _addX * _moveDis;
 
-			nextBoxInfo = BoxManager->GetBoxInformation(_upperY, _upperX);
-
 			if (_upperY < RectVerticalNumber && _upperX < RectHorizontalNumber && _upperY >= 0 && _upperX >= 0)
 			{
+				nextBoxInfo = BoxManager->GetBoxInformation(_upperY, _upperX);
+				
 				if (nextBoxInfo.ThisPlayerType != PlayerType::Player)
 				{
 					MapManager.SetDefaultMap(_upperY, _upperX, MAP_VALUE_CANMOVE);
@@ -86,11 +73,12 @@ void controller::PlayerController::PieceMoveMapDraw(int piecePositionX, int piec
 	{
 		IsSelectingPiece = !IsSelectingPiece;
 	}
-	//MapManager.DrawMap(BoxManager);
 }
 
+//マウスのクリックを押した時のみTrueを返す関数
 bool controller::PlayerController::PieceSelectPressed()
 {
+	//入力したかどうかを確認する変数
 	bool _returnBool = false;
 
 	int _IsMouseInput = GetMouseInput() & MOUSE_INPUT_LEFT;	//ここでマウスの入力状態の値を取得、そしてマウスの左クリック時に1を、クリックしていないときは0を返すように設定
@@ -109,8 +97,10 @@ bool controller::PlayerController::PieceSelectPressed()
 	return _returnBool;
 }
 
+//std::clampのように3つの値を渡すとはじめの値が後の2つの値の間にあるかを判定し、間にない場合は最大値か最小値に置き換える関数
 int controller::PlayerController::InsteadOfClamp(int currentValue, int minValue, int maxValue)
 {
+	//返り値、基本的には引数を返すが、最小より小さい場合や最大より大きい場合は最小と最大がそれぞれ返り値として入る
 	int _returnValue = currentValue;
 
 	if (currentValue >= maxValue)
@@ -125,6 +115,7 @@ int controller::PlayerController::InsteadOfClamp(int currentValue, int minValue,
 	return _returnValue;
 }
 
+//マウスをクリックした箇所のFieldRectStructを取得する関数
 void controller::PlayerController::MouseClickGetFieldRectStruct()
 {
 	if (PieceSelectPressed() == true)
@@ -184,9 +175,10 @@ void controller::PlayerController::MouseClickGetFieldRectStruct()
 	}
 }
 
-void controller::PlayerController::ControllerUpdate(map::BoxInformationManager * box)
+//純粋仮想関数をオーバーライドした関数、ゲームのループ部分で行ってほしい処理をここにすべて記述する
+void controller::PlayerController::ControllerUpdate()
 {
-	BoxManager = box;
+		//
 	TurnChange = true;
 	MouseClickGetFieldRectStruct();
 
@@ -204,14 +196,26 @@ void controller::PlayerController::ControllerUpdate(map::BoxInformationManager *
 		MapManager.ResetDefaultMap();
 	}
 
+	BoxManager->DebugBoxInformation(1000);
 	MapManager.DrawMap(BoxManager);
 }
 
-void controller::PlayerController::Initialize()
+//初期化処理、主にメモリ確保やグラフィックハンドルの初期化を行う関数
+void controller::PlayerController::Initialize(map::BoxInformationManager * arg_box)
 {
+	BoxManager = new map::BoxInformationManager;
+	BoxManager = arg_box;		//メモリ確保、引数としてきたBoxInformationManagerがもつ値が重要なので参照を受け取って変数にコピー
+	
 	MapManager.InitializeGraphMap();
 }
 
+//終了処理、メモリ解放用関数
+void controller::PlayerController::End()
+{
+	delete BoxManager;
+}
+
+//マス目上の駒毎の評価マップに値をつけ、その合計をもとめる関数
 int controller::EnemyController::EnemyPieceMapEvalute(int pieceX, int pieceY, map::RectTransform * firstMemValue, int length)
 {
 	//返り値、どれだけ評価されたかをここで返り値として渡す
@@ -257,12 +261,11 @@ int controller::EnemyController::EnemyPieceMapEvalute(int pieceX, int pieceY, ma
 			_nextY = pieceY + _addY * _moveDis;
 			_nextX = pieceX + _addX * _moveDis;
 
-			_nextBoxInfo = BoxManager->GetBoxInformation(_nextY, _nextX);
-
 			if (_nextY < RectVerticalNumber &&  _nextX < RectHorizontalNumber)
 			{
 				if (_nextY >= 0 && _nextX >= 0)
-				{
+				{	
+					_nextBoxInfo = BoxManager->GetBoxInformation(_nextY, _nextX);
 					if (_nextBoxInfo.ThisPlayerType != PlayerType::Enemy)
 					{
 						_returnEvalutionValue += MAP_VALUE_CANMOVE;		//移動可能な場所である場合はMAP_VALUE_CANMOVEが加算される
@@ -289,6 +292,7 @@ int controller::EnemyController::EnemyPieceMapEvalute(int pieceX, int pieceY, ma
 	return _returnEvalutionValue;	//最後に評価された値を返す
 }
 
+//評価した値を元に動かすマス目を選択する関数
 map::FieldRectStruct controller::EnemyController::EnemyPieceDetermationByEvalution()
 {
 	std::vector<map::FieldRectStruct> _enemyPiecesArray;	//盤面上に存在するNPCの駒の情報
@@ -335,20 +339,21 @@ map::FieldRectStruct controller::EnemyController::EnemyPieceDetermationByEvaluti
 	return _enemyPiecesArray[_maxNum];
 }
 
+//敵の移動先を計算し、DefaultMapに加算する関数
 void controller::EnemyController::EnemyMoveMapCalculation(int piecePositionX, int piecePositionY, map::RectTransform * firstMemValue, int length)
 {
 	int _distanceX = 0;
-	int _distanceY = 0;
+	int _distanceY = 0;	//移動情報の配列に記載された座標
 	int _count = 0;		//次のfor文をどれだけ回すかを決める変数
 	int _addX = 0;
-	int _addY = 0;
+	int _addY = 0;		//次のfor文の時に1つループが進むごとにどれだけ進むかを求めた値
 	int _nextY = 0;
 	int _nextX = 0;		//次に移動可能か確認するBoxInformation配列の番号
 	map::FieldRectStruct _nextBoxInfo;
 	for (int _arrayNum = 0; _arrayNum < length; _arrayNum++)
 	{
 		_distanceX = (firstMemValue + _arrayNum)->RectPositionX;
-		_distanceY = (firstMemValue + _arrayNum)->RectPositionY;//移動情報の配列に記載された座標		
+		_distanceY = (firstMemValue + _arrayNum)->RectPositionY;		
 
 		//_distanceXが0じゃなければ_countに代入、0なら_distanceYが_countに代入する。どちらも0なら移動不能ということで次のループに移行する
 		if (_distanceX != 0)
@@ -365,7 +370,7 @@ void controller::EnemyController::EnemyMoveMapCalculation(int piecePositionX, in
 		}
 
 		_addX = _distanceX / _count;
-		_addY = _distanceY / _count;	//次のfor文の時に1つループが進むごとにどれだけ進むかを求めた値
+		_addY = _distanceY / _count;	
 
 		//_countの数だけループが回り、そのつどBoxInfomationのPlayerTypeで確認を行う。PlayerTypeがプレイヤーやNPCの時には次のループに移行する
 		for (int _moveDis = 1; _moveDis <= _count; _moveDis++)
@@ -373,12 +378,12 @@ void controller::EnemyController::EnemyMoveMapCalculation(int piecePositionX, in
 			_nextY = piecePositionY - _addY * _moveDis;
 			_nextX = piecePositionX - _addX * _moveDis;	
 
-			_nextBoxInfo = BoxManager->GetBoxInformation(_nextY, _nextX);
-
 			if (_nextY < RectVerticalNumber && _nextX < RectHorizontalNumber)
 			{
 				if (_nextY >= 0 && _nextX >= 0)
 				{
+					_nextBoxInfo = BoxManager->GetBoxInformation(_nextY, _nextX);
+					
 					if (_nextBoxInfo.ThisPlayerType != PlayerType::Enemy)
 					{
 						MapManager.SetDefaultMap(_nextY, _nextX, MAP_VALUE_CANMOVE);	//移動可能な場所である場合はMAP_VALUE_CANMOVEが加算される
@@ -403,6 +408,7 @@ void controller::EnemyController::EnemyMoveMapCalculation(int piecePositionX, in
 	}
 }
 
+//DefaultMapから移動先を決定する関数
 void controller::EnemyController::EnemyMoveDetermation()
 {
 	std::vector<map::RectTransform> rectTransformArray;	//マス目の座標を配列化するもの
@@ -448,9 +454,10 @@ void controller::EnemyController::EnemyMoveDetermation()
 	BoxManager->PieceMove(CurrentSelectRect.RectPositionX, CurrentSelectRect.RectPositionY, rectTransformArray[_number].RectPositionX, rectTransformArray[_number].RectPositionY, CurrentSelectRect);
 }
 
-void controller::EnemyController::ControllerUpdate(map::BoxInformationManager * box)
+//純粋仮想関数をオーバーライドした関数、ゲームのループ部分で行ってほしい処理をここにすべて記述する
+void controller::EnemyController::ControllerUpdate()
 {
-	BoxManager = box;
+	
 	//はじめにDefaultMapを初期化する
 	MapManager.ResetDefaultMap();
 
@@ -469,7 +476,16 @@ void controller::EnemyController::ControllerUpdate(map::BoxInformationManager * 
 	MapManager.DrawMap(BoxManager);
 }
 
-void controller::EnemyController::Initialize()
+//初期化処理、主にメモリ確保を扱う関数
+void controller::EnemyController::Initialize(map::BoxInformationManager * arg_box)
 {
+	BoxManager = new map::BoxInformationManager;
+	BoxManager = arg_box;				//メモリ確保、引数としてきたBoxInformationManagerがもつ値が重要なので参照を受け取って変数にコピー
 	MapManager.InitializeGraphMap();
+}
+
+//終了処理、主にメモリ解放用の関数
+void controller::EnemyController::End()
+{
+	delete BoxManager;
 }

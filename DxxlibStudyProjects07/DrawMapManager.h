@@ -4,8 +4,8 @@
 #include "playerType.h"
 #include <vector>
 #include <map>
+#include <assert.h>
 
-#define ARRAY_LENGTH(array) (sizeof(array) / sizeof(array[0]))	//配列の長さを取得するマクロ
 #define ARRAY_FIRSTMAPVALUE(array) (&array[0])		//配列の先頭の値を取得するマクロ
 
 #define PLAYER_LINE 0		//プレイヤーのキングなどが並ぶ列の値
@@ -26,6 +26,7 @@
 #define COLOR_MAX_VALUE 255	//色のマックスの時の値
 
 #define MAP_VALUE_CANMOVE 1
+
 //マスの大きさやフィールドの大きさ
 int const BoxSize = 200;
 int const FieldWidth = 1600;
@@ -34,6 +35,22 @@ int const FieldHeight = 800;
 //縦横のマス目の個数
 int const RectHorizontalNumber = FieldWidth / BoxSize;
 int const RectVerticalNumber = FieldHeight / BoxSize;
+
+//駒の情報
+struct PieceInfo
+{
+	PieceType Piece;
+	PlayerType Player;
+};
+
+//初期の駒配置を2次元配列で設定
+PieceInfo const InitialPiecePlacementMap[RectVerticalNumber][RectHorizontalNumber] = 
+{
+	{ {PieceType::Rook, PlayerType::Player}, {PieceType::Pawn, PlayerType::Player}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::Pawn, PlayerType::Enemy}, {PieceType::Rook, PlayerType::Enemy}},
+	{ {PieceType::King, PlayerType::Player}, {PieceType::Pawn, PlayerType::Player}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::Pawn, PlayerType::Enemy}, {PieceType::King, PlayerType::Enemy}},
+	{ {PieceType::Queen, PlayerType::Player}, {PieceType::Pawn, PlayerType::Player}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::Pawn, PlayerType::Enemy}, {PieceType::Queen, PlayerType::Enemy}},
+	{ {PieceType::Bishop, PlayerType::Player}, {PieceType::Pawn, PlayerType::Player}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::None, PlayerType::NonPlayer}, {PieceType::Pawn, PlayerType::Enemy}, {PieceType::Bishop, PlayerType::Enemy}}
+};
 
 
 
@@ -81,11 +98,12 @@ namespace map
 		PlayerType	ThisPlayerType;	//このマスの上に載っている駒の操作主は誰かを表す値
 	};
 
-
+	//マス目の情報を管理するクラス
 	class BoxInformationManager
 	{
 
 	public:
+		//コンストラクタで初期化処理を実行
 		BoxInformationManager();
 
 		//駒の移動処理、ターゲットのマス目に現在のマス目の情報を上書きする関数、この関数はNPCのターンでも使用する
@@ -94,11 +112,13 @@ namespace map
 		//指定した行と列からBoxInformationを取得する
 		FieldRectStruct GetBoxInformation(int arg_row, int arg_col);
 
-		//駒のタイプ
+		//駒のタイプから移動情報を取得する関数
 		PieceInformation GetPieceMap(PieceType arg_pieceType);
 
+		//デバッグ用関数
 		void DebugBoxInformation(int X);
 		
+		//現在の駒の個数を取得するための関数
 		int GetRemainingPiece(PlayerType arg_playerType);
 	private:
 
@@ -114,10 +134,7 @@ namespace map
 		//BoxInformationの初期化
 		void InitializeBoxInformation();
 
-		//ゲーム開始時の駒の配置、今ごり押しだから後でマップで作成
-		void PlacementOfPieces();
-
-		//各駒の移動情報、通常配列
+		//各駒の移動情報、可変長変数に変更
 		std::vector<RectTransform> PawnMap = {
 		{1,0}
 		};
@@ -146,36 +163,43 @@ namespace map
 		};
 	};
 
-	//DefaultMapとBoxInformationを元に描画を扱うクラス
+	//DefaultMapとBoxInformationを元に描画を扱うクラス、DefaultMapの管理も行っている
 	class DrawMapManager
 	{
 
 	public:
-		DrawMapManager();
-
-		
+		//コンストラクタでウィンドウの切り替えなどを扱う
+		DrawMapManager();		
 
 		//駒の画像とフィールドを描写する関数、描写に関する処理はここ以外ではやってない。
 		void DrawMap(BoxInformationManager * box);
 		
+		//DefaultMapの全要素を0にする関数
 		void ResetDefaultMap();
 
+		//駒の種類とプレイヤーからグラフィックハンドルを取得するための関数
 		int GetGraphicHandle(PieceType arg_pieceType, PlayerType arg_playerType);	//入れる引数は取得したい駒の種類とプレイヤーは敵か味方か
 
+		//任意の座標のDefaultMap内の値を変更させたいときの関数
 		void SetDefaultMap(int arg_row, int arg_col, int value);	//入れる引数は変えたいpositionY、変えたいpositionX、値
 
+		//任意の座標のDefaultMapの値を取得するための関数
 		int GetDefaultMap(int arg_row, int arg_col);		//入れる引数はpositionY、positionX
+
+		//グラフィックハンドルの設定とmapへのインサートを行う関数、各コントローラーの初期化処理で呼ばないとダメ
 		void InitializeGraphMap();
 	private:
-		
 
+		//移動に関する処理のための2次元配列、この変数自体は各コントローラーで共通である必要はない
 		int DefaultMap[RectVerticalNumber][RectHorizontalNumber];
 
 		//駒のタイプとプレイヤーの情報から画像のデータを紐づけるmap
 		std::map<std::pair<PieceType, PlayerType>, int> GraphMap;
 
+		//画像の構造体
 		GraphsAdressLists GraphsList;
 
+		//BoxInformationManagerのクラスを取得、盤面の描画に必要
 		BoxInformationManager *BoxManager;
 
 	};
