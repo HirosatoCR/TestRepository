@@ -10,8 +10,9 @@ map::BoxInformationManager::BoxInformationManager()
 //駒の移動処理、ターゲットのマス目に現在のマス目の情報を上書きする関数、この関数はNPCのターンでも使用する
 void map::BoxInformationManager::PieceMove(int currentPiecePositionX, int currentPiecePositionY, int targetPiecePositionX, int targetPiecePositionY, FieldRectStruct currentPiece)
 {
-
-	if (currentPiece.ThisPieceType == PieceType::Pawn && (currentPiece.ThisPlayerType == PlayerType::Player && targetPiecePositionX == ENEMY_LINE) || (currentPiece.ThisPlayerType == PlayerType::Enemy && targetPiecePositionX == PLAYER_LINE))
+	assert(currentPiecePositionX >= 0 && currentPiecePositionY >= 0 && currentPiecePositionY < RectVerticalNumber && currentPiecePositionX < RectHorizontalNumber);
+	assert(targetPiecePositionY >= 0 && targetPiecePositionX >= 0 && targetPiecePositionY < RectVerticalNumber && targetPiecePositionX < RectHorizontalNumber);
+	if (currentPiece.ThisPieceType == PieceType::Pawn && (currentPiece.ThisPlayerType == PlayerType::Player && targetPiecePositionX == ENEMY_LINE) || (currentPiece.ThisPieceType == PieceType::Pawn &&currentPiece.ThisPlayerType == PlayerType::Enemy && targetPiecePositionX == PLAYER_LINE))
 	{
 		currentPiece.ThisPieceType = PieceType::Queen;		//ポーンが一番奥まで行ったときに初期化初期化処理
 	}

@@ -79,7 +79,7 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
           [
               _Ty=std::pair<const PieceType,map::PieceInformation>
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(73): note: コンパイル対象の クラス テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(74): note: コンパイル対象の クラス テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' のリファレンスを確認してください
           with
           [
               _Ty=std::pair<const PieceType,map::PieceInformation>
@@ -89,7 +89,7 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
           [
               _Ty=std::pair<const std::pair<PieceType,PlayerType>,int>
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(212): note: コンパイル対象の クラス テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(213): note: コンパイル対象の クラス テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>' のリファレンスを確認してください
           with
           [
               _Ty=std::pair<const std::pair<PieceType,PlayerType>,int>
@@ -289,7 +289,7 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
               _Kty=std::pair<PieceType,PlayerType>,
               _Ty=int
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(170): note: コンパイル対象の関数 テンプレート インスタンス化 'int &std::map<std::pair<PieceType,PlayerType>,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](std::pair<PieceType,PlayerType> &&)' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(171): note: コンパイル対象の関数 テンプレート インスタンス化 'int &std::map<std::pair<PieceType,PlayerType>,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](std::pair<PieceType,PlayerType> &&)' のリファレンスを確認してください
           with
           [
               _Kty=std::pair<PieceType,PlayerType>,
@@ -353,7 +353,7 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
               _Kty=PieceType,
               _Ty=map::PieceInformation
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(33): note: コンパイル対象の関数 テンプレート インスタンス化 'map::PieceInformation &std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(34): note: コンパイル対象の関数 テンプレート インスタンス化 'map::PieceInformation &std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>::operator [](const PieceType &)' のリファレンスを確認してください
           with
           [
               _Kty=PieceType,
@@ -395,14 +395,14 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
               _Pr=std::less<PieceType>,
               _Alloc=std::allocator<std::pair<const PieceType,map::PieceInformation>>
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(73): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<PieceType,map::PieceInformation>,void>(_Valty &&)' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(74): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<PieceType,map::PieceInformation>,void>(_Valty &&)' のリファレンスを確認してください
           with
           [
               _Ty=std::pair<const PieceType,map::PieceInformation>,
               _Kty=PieceType,
               _Valty=std::pair<PieceType,map::PieceInformation>
           ]
-  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(73): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<PieceType,map::PieceInformation>,void>(_Valty &&)' のリファレンスを確認してください
+  c:\users\naoto.hirosato\documents\testrepository\dxxlibstudyprojects07\drawmapmanager.cpp(74): note: コンパイル対象の関数 テンプレート インスタンス化 'std::pair<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::map<PieceType,map::PieceInformation,std::less<_Kty>,std::allocator<_Ty>>::insert<std::pair<PieceType,map::PieceInformation>,void>(_Valty &&)' のリファレンスを確認してください
           with
           [
               _Ty=std::pair<const PieceType,map::PieceInformation>,
